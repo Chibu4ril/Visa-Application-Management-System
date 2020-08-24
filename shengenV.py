@@ -50,5 +50,62 @@ app_numLabel.place(x=800, y=275)
 app_num = Entry(root, width=30)
 app_num.place(x=800, y=300)
 
+# date of birth( can be mordified)
+
+dob_label = Label(root, text="4. Date of birth(day-month-year): ")
+dob_label.place(x=20, y=330)
+dob = Entry(root, width=30)
+dob.place(x=20, y=350)
+
+pob_label = Label(root, text="5. Place of birth: ")
+pob_label.place(x=250, y=330)
+pob = Entry(root, width=35)
+pob.place(x=250, y=350)
+
+
+cob_label = Label(root, text="6. Country of birth: ")
+cob_label.place(x=250, y=380)
+cob = Entry(root, width=35)
+cob.place(x=250, y=400)
+
+
+cn_label = Label(root, text="7. Current nationality: ")
+cn_label.place(x=500, y=330)
+cn = Entry(root, width=35)
+cn.place(x=500, y=350)
+
+nab_label = Label(root, text=" Nationality at birth if different : ")
+nab_label.place(x=500, y=380)
+nab = Entry(root, width=35)
+nab.place(x=500, y=400)
+
+cn_label = Label(root, text=" Other nationality: ")
+cn_label.place(x=500, y=430)
+cn = Entry(root, width=35)
+cn.place(x=500, y=450)
+
+
+selected = IntVar()
+
+rad_label = Label(root, text=" 8. Gender: ")
+rad1 = Radiobutton(root, text='Male', value=1, variable=selected)
+
+rad2 = Radiobutton(root, text='Female', value=2, variable=selected)
+
+
+rad_label.place(x=20, y=480)
+
+rad1.place(x=20, y=500)
+
+rad2.place(x=100, y=500)
+
+parental_aut_label = Label(
+    root, text=" parental authority(in case of minors)/legal guardian(surname, first name, address, if different \n from applicant's, telephoneno., e-mail address, and nationality): ")
+parental_aut_label.place(x=20, y=600)
+parental_aut = Entry(root, width=120)
+parental_aut.place(x=20, y=650)
+parental_aut2 = Entry(root, width=120)
+parental_aut2.place(x=20, y=680)
+
 
 root.mainloop()
